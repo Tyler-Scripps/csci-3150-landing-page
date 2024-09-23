@@ -1,0 +1,30 @@
+/* h1, h2, h3, a {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+} */
+
+/* This will limit the width of the content and center it on the page */
+body {
+    text-align: center;
+    max-width: 800px;  /* Adjust the value to set the desired width */
+    margin: 0 auto;
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+/* Ensure <hr> tags extend across the full width of the page */
+hr {
+    width: 100vw;
+    margin: 20px 0;
+}
+
+/* Optional: You can add styles for the links to make them stand out */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
