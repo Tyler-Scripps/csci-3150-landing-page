@@ -21,3 +21,20 @@ body {
 hr {
     color: #554F4C;
 }
+
+nav ul li a:link {
+    color: black;
+}
+
+nav ul li a:visited {
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #FF763B;
+    background: #332A25;
+}
+
+nav ul li a:active {
+    color: greenyellow;
+}
