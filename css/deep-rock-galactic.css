@@ -15,7 +15,7 @@ table th {
 }
 
 body {
-    background: #D58556;
+    background: rgba(213, 133, 86, 0.8);
 }
 
 hr {
@@ -37,4 +37,13 @@ nav ul li a:hover {
 
 nav ul li a:active {
     color: greenyellow;
+}
+
+dl dd {
+    margin-top: 0.25em;
+    margin-bottom: 1.6em;
+}
+
+ol.reference-list li {
+    margin: 0.6em 0;
 }
