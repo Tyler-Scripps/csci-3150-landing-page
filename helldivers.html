@@ -6,6 +6,7 @@
     <title>Helldivers 2</title>
     <link rel="stylesheet" href="./css/semantic-design.css">
     <link rel="stylesheet" href="./css/helldivers.css">
+    <link rel="stylesheet" href="./css/forms.css">
 </head>
 <body>
     <div class="container">
@@ -16,13 +17,14 @@
         <nav>
             <h2 class="sr-only">Main Navigation</h2>
             <ul>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#gampleay">Gameplay</a></li>
-                <li><a href="#plot">Plot</a></li>
-                <li><a href="#dev-release">Development and Release</a></li>
-                <li><a href="#reception">Reception</a></li>
-                <li><a href="#sales">Sales</a></li>
-                <li><a href="#psn">PSN account controversy</a></li>
+                <li><a href="#overview">Overview</a><span class="material-symbols-outlined" aria-hidden="true">overview</span></li>
+                <li><a href="#gampleay">Gameplay</a><span class="material-symbols-outlined" aria-hidden="true">joystick</span></li>
+                <li><a href="#plot">Plot</a><span class="material-symbols-outlined" aria-hidden="true">menu_book</span></li>
+                <li><a href="#sign-up">Fight for Democracy</a><span class="material-symbols-outlined" aria-hidden="true">swords</span></li>
+                <li><a href="#dev-release">Development and Release</a><span class="material-symbols-outlined" aria-hidden="true">construction</span></li>
+                <li><a href="#reception">Reception</a><span class="material-symbols-outlined" aria-hidden="true">search</span></li>
+                <li><a href="#sales">Sales</a><span class="material-symbols-outlined" aria-hidden="true">payments</span></li>
+                <li><a href="#psn">PSN account controversy</a><span class="material-symbols-outlined" aria-hidden="true">exclamation</span></li>
             </ul>
         </nav>
         <main>
@@ -59,8 +61,29 @@
             <section id="plot">
                 <h2>Plot</h2>
                 <p>
-                    Helldivers 2 is set a century after the triumph of "Super Earth and Democracy", a self-described managed democracy, over the Cyborgs, Bugs, and Illuminate during the events of the first game. It is discovered that, upon death, the Terminids produce a unique and highly valuable resource known as E-710. Farms are established on human-colonized worlds, but containment is eventually breached, releasing the bugs and causing chaos and destruction. Simultaneously, a new threat emerges in the form of the Automatons, a mechanical army intent on destroying humanity. The game begins with a recruitment video for the Helldivers, who are elite shock troops dropped from orbit to reclaim the colonized lands. New players undergo a short training course on Mars, becoming a fully fledged Helldiver, and are sent off into space to crew their own Super Destroyer and fight in the ongoing Second Galactic War.[16] Environmental storytelling is prevalent throughout the game, with various logs, notes, and propaganda messages available for players to find during gameplay.[17] 
+                    Helldivers 2 is set a century after the triumph of "Super Earth and Democracy", a self-described <mark>managed democracy</mark>, over the Cyborgs, Bugs, and Illuminate during the events of the first game. It is discovered that, upon death, the Terminids produce a unique and highly valuable resource known as E-710. Farms are established on human-colonized worlds, but containment is eventually breached, releasing the bugs and causing chaos and destruction. Simultaneously, a new threat emerges in the form of the Automatons, a mechanical army intent on destroying humanity. The game begins with a recruitment video for the Helldivers, who are elite shock troops dropped from orbit to reclaim the colonized lands. New players undergo a short training course on Mars, becoming a fully fledged Helldiver, and are sent off into space to crew their own Super Destroyer and fight in the ongoing Second Galactic War.[16] Environmental storytelling is prevalent throughout the game, with various logs, notes, and propaganda messages available for players to find during gameplay.[17] 
                 </p>
+            </section>
+            <section id="sign-up">
+                <h2>Fight for Democracy</h2>
+                <form id="myForm">
+                    <fieldset>
+                        <legend>Register today!</legend>
+                        <label for="name">
+                            What is your name?
+                            <input type="text" id="name" placeholder="first last" required>
+                        </label>
+                        <label for="email">
+                            What is your email?
+                            <input type="email" id="email" required>
+                        </label>
+                        <label for="age">
+                            What is your age?
+                            <input type="number" id="age" required>
+                        </label>
+                        <input type="submit">
+                    </fieldset>
+                </form>
             </section>
             <section id="dev-release">
                 <h2>Development and Release</h2>
@@ -184,9 +207,33 @@
             </section>
             <section id="accolades">
                 <h2>Accolades</h2>
+                <table>
+                    <tr>
+                        <th>Year</th>
+                        <th>Ceremony</th>
+                        <th>Category</th>
+                        <th>Result</th>
+                        <th>Ref.</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">2024</td>
+                        <td rowspan="3">Golden Joystick Awards</td>
+                        <td>Best Multiplayer Game</td>
+                        <td>Pending</td>
+                        <td rowspan="3">[64]</td>
+                    </tr>
+                    <tr>
+                        <td>Console Game of the Year</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Best Game Trailer (launch trailer)</td>
+                        <td>Pending</td>
+                    </tr>
+                </table>
             </section>
             <section id="psn">
-                <h2>PSN account controversy</h2>
+                <h2><abbr title="PlayStation Network">PSN</abbr> account controversy</h2>
                 <p>
                     At launch, Helldivers 2 did not require PC players to log into a PlayStation Network (PSN) account, allowing players to skip the integration despite a line on boot up stating that a PSN account is required. On 3 May 2024, Sony Interactive Entertainment announced that the PC version of Helldivers 2 on Steam would mandate users to sign in with a PSN account, taking effect for new players on 6 May, and required for existing players by 4 June. SIE stated that a PSN login is necessary to "[uphold] the values of safety and security provided on PlayStation and PlayStation Studios games", and that this requirement was not implemented at launch due to technical issues.[64] The announcement was met with criticism.[65] Additionally, many players called out that official documentation from Sony claimed that PSN accounts were optional for games on PC, with this statement changing to an ambiguous "some games" statement[66][67] after players were directed to contact Sony support by Pilestedt.[68] On 4 May, the listing on Steam was updated to disallow sales to 177 territories where PSN is not available.[69] 
                 </p>
