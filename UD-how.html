@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>How to do Universal Design</title>
+    <link rel="stylesheet" href="./css/semantic-design.css">
+    <link rel="stylesheet" href="./css/UD.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Universal Design</h1>
+        </header>
+        <nav>
+            <h2 class="sr-only">Main Navigation</h2>
+            <ul>
+                <li><a href="./UD-why.html">Why</a></li>
+                <li><a href="./UD-what.html">What</a></li>
+                <li><a href="./UD-how.html">How</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="overview">
+                <h2>How to do Universal Design?</h2>
+                <p>While it is is fairly obvious to say that one must know lots of rules, guidelines, and standards around accessibility that isn't a very accessible set of instructions. There are however many tools to assist with accessible web design, these are what I want to focus on.</p>
+                <p>The first tool I want to discuss is the <a href="https://color.adobe.com/create/color-accessibility">Adobe color accessibility tool</a>. This tool is for ensuring that you have sufficient contrast between foreground and background colors as well as making sure there are no problems relating to color blindness.</p>
+                <p>The second tool I want to explain is the <a href="https://wave.webaim.org/"> WAVE Evaluation Tool</a>. This tool is targeted to accessible web design and more specifically ensuring the structure of your webpage is correct for screen readers and is properly semantic.</p>
+                <p>The last tool I want to discuss is <a href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Google Lighthosue</a>, which helps with understand page formatting and also general performance.</p>
+            </section>
+        </main>
+        <aside id="aside1">
+            <h2>Color Safety Example</h2>
+            <figure>
+                <img src="./img/color_blind_unsafe.png" alt="Color gradient wheel with five dots scattered on it, with the bottom two connected by white line">
+                <figcaption>Adobe color blind safe checker wheel</figcaption>
+            </figure>
+            Here is an example of the <a href="https://color.adobe.com/create/color-accessibility">Adobe color accessibility checker</a> where two colors are too similar. The two color in question being the blue and purple (the bottommost dots).
+        </aside>
+        <aside id="aside2">
+            <h2>The Hard Part</h2>
+            <p>The hardest part of accessible design is the level of empathy it requires to truly understand and address the needs of people with different abilities. It’s not just about following technical guidelines or ticking boxes—it’s about imagining the challenges that others face and designing solutions that genuinely make their experiences better. This demands stepping out of our own perspectives and being willing to test, iterate, and listen to feedback from users with diverse needs. Empathy is at the heart of accessible design because it pushes us to create not just functional solutions, but meaningful ones that respect and empower all individuals.</p>
+        </aside>
+        <footer>
+            <small> Designed by Tyler Scripps for csci 3150</small>
+        </footer>
+    </div>
+</body>
+</html>
