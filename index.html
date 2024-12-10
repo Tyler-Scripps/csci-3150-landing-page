@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyler Scripps's landing Page</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/semantic-design.css">
 </head>
 <body style="background-color: lightgrey;">
-    <h1>Tyler Scripps</h1>
-    <h2>Universal Design</h2>
-    <hr>
-    <h3>About Me</h3>
-    Hi, my name is Tyler and I am a senior studying computer science, but what I really like doing is all forms of electronics. 
-    I program in a variety of languages but my favorites are the ones that I can use for embedded systems.
-    I play Magic: The Gathering in my spare time and use it has a an excuse to practice programming by catalogging them.
-    <hr>
-    <nav>
-        <h2>Navigation</h2>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./semantics.html">Semantic HTML</a></li>
-            <li><a href="./deep-rock-galactic.html">Deep Rock Galactic Semantic Wikipedia Page</a></li>
-            <li><a href="./forms.html">Forms</a></li>
-            <li><a href="./helldivers.html">Helldivers 2</a></li>
-            <li><a href="./inscryption.html">Inscryption</a></li>
-            <li><a href="./UD-why.html">Why Do Universal Design (final project)</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <header>
+            <h1>Tyler Scripps</h1>
+        </header>
+        <nav>
+            <h2 class="sr-only">Main Navigation</h2>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./semantics.html">Semantic HTML</a></li>
+                <li><a href="./deep-rock-galactic.html">Lab 2</a></li>
+                <li><a href="./forms.html">Forms</a></li>
+                <li><a href="./helldivers.html">Lab 3</a></li>
+                <li><a href="./inscryption.html">Lab 4</a></li>
+                <li><a href="./UD-why.html">Why Do Universal Design (final project)</a></li>
+            </ul>
+        </nav>
+        <main id="about">
+            <h3>About Me</h3>
+            <p>Hi, my name is Tyler and I am a senior studying computer science, but what I really like doing is all forms of electronics. I program in a variety of languages but my favorites are the ones that I can use for embedded systems. I play Magic: The Gathering in my spare time and use it has a an excuse to practice programming by catalogging them.</p>
+        </main>
+        <figure id="pic" style="max-width: 100%;">
+            <img src="./img/tyler.jpg" alt="Portrait of Tyler Scrips wearing grey flannel" style="max-width: 100%;">
+        </figure>
+    </div>
 </body>
 </html>

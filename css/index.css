@@ -13,10 +13,11 @@ body {
     padding: 20px;
 }
 
-/* Ensure <hr> tags extend across the full width of the page */
-hr {
-    width: 100vw;
-    margin: 20px 0;
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-left: 0;
 }
 
 /* Optional: You can add styles for the links to make them stand out */
@@ -27,4 +28,60 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    /* background: rgb(175, 222, 176); */
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns:
+     1fr    1fr;
+    grid-template-areas:
+    "heady     heady"
+    "navvy     navvy"
+    "mainy     piccy"
+    "mainy     piccy"
+    "mainy     piccy"
+    "footy     footy";
+}
+
+header {grid-area: heady;}
+nav {grid-area: navvy;}
+main {grid-area: mainy; max-height: 100%;}
+#pic {grid-area: piccy;}
+footer {grid-area: footy;}
+
+@media screen 
+and (max-width: 640px)
+{
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "heady"
+        "navvy"
+        "mainy"
+        "piccy"
+        "footy";
+    }
+    nav ul {
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+    nav ul li a {
+        display: block;
+        padding: 10px 5px;
+        margin: 5px;
+        /* border: 1px black solid; */
+        background: white;
+    }
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    font-size: small;
 }

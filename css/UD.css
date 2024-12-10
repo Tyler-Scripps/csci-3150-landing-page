@@ -7,6 +7,7 @@ body {
 header,
 nav {
     font-family: "Noto Serif", serif;
+    background: #91b9e2;
 }
 
 nav ul {
@@ -15,13 +16,17 @@ nav ul {
     justify-content: space-around;
 }
 
+a:visited {
+    color: black;
+}
+
 header,
 nav,
 main,
 aside,
 footer {
     padding: 1.5em;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 .container {
@@ -36,11 +41,11 @@ footer {
     grid-template-areas:
     "heady     heady     heady"
     "navvy     navvy     navvy"
-    "aside1    mainy     aside2"
-    "aside1    mainy     aside2"
-    "aside1    mainy     aside2"
+    "aside1    mainy     mainy"
+    "aside1    mainy     mainy"
+    "aside2    mainy     mainy"
     "footy     footy     footy";
-  }
+}
 
 header {grid-area: heady;}
 nav {grid-area: navvy;}
@@ -54,6 +59,7 @@ nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    padding-left: 0;
 }
 
 nav ul li {
@@ -83,10 +89,10 @@ and (max-width: 640px)
         grid-template-columns: 1fr;
         grid-template-areas: 
         "heady"
+        "navvy"
         "mainy"
         "aside1"
         "aside2"
-        "navvy"
         "footy";
     }
     nav ul {
@@ -97,7 +103,7 @@ and (max-width: 640px)
         display: block;
         padding: 10px 5px;
         margin: 5px;
-        border: 1px black solid;
+        /* border: 1px black solid; */
         background: white;
     }
 }
